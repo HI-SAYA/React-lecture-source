@@ -18,10 +18,14 @@
         function sayHello() {
             console.log('Hello world!');
         }
+        // 아래 코드는 동기적으로 실행 되기 때문에 sayHello 함수의 동작이 끝난 뒤 end가 출력 된다.
+        // sayHello();
+        // console.log('end!!');
 
-        sayHello();
-
-        console.log('end!!');
+        // 아래 코드는 비동기적으로 실행 되기 때문에 setTimeout으로 Heloo World 출력을 예약하고
+        // 메인 흐름은 이어서 실행 되기 때문에 end가 먼저 출력 된 뒤 3초 뒤 Hello World가 출력 된다.
+        setTimeout(sayHello, 3000);
+        console.log('end!!!');
 
     </script>
 </body>
