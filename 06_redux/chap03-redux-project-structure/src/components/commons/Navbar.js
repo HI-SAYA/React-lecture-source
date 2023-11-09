@@ -1,8 +1,7 @@
 import {NavLink} from "react-router-dom";
 
-function Navbar () {
-
-    return(
+function Navbar() {
+    return (
         <div>
             <ul>
                 <li><NavLink to="/">메인으로</NavLink></li>
